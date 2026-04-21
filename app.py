@@ -6,7 +6,7 @@ st.set_page_config(page_title="Digital Solutions & Consulting IT", page_icon="�
 
 # --- NOVO CÓDIGO PARA O LOGO ---
 try:
-    img = Image.open("logo.PNG") # Garanta que o nome aqui é igual ao do ficheiro que subiu
+    img = Image.open("logo.jpg") # Garanta que o nome aqui é igual ao do ficheiro que subiu
     st.image(img, width=200)     # Ajuste o tamanho (200) como preferir
 except:
     st.warning("Logo não encontrado no repositório.")
