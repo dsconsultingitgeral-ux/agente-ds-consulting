@@ -1,8 +1,16 @@
 import streamlit as st
 from groq import Groq
-
+from PIL import Image # Adicione esta linha no topo
 # 1. Configuração da Identidade Visual
 st.set_page_config(page_title="Digital Solutions & Consulting IT", page_icon="🚀")
+
+# --- NOVO CÓDIGO PARA O LOGO ---
+try:
+    img = Image.open("logo.png") # Garanta que o nome aqui é igual ao do ficheiro que subiu
+    st.image(img, width=200)     # Ajuste o tamanho (200) como preferir
+except:
+    st.warning("Logo não encontrado no repositório.")
+# ------------------------------
 
 # Estilo para parecer um chat profissional
 st.markdown("""
